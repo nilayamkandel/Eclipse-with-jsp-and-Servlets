@@ -10,12 +10,14 @@
 	<h1>welcome  to login form</h1>
 	<hr>
 	<a href = "index.jsp">back</a>
+	
 		<form action = "LoginServlet" method = "post">
-			
+					
 			<p style = "color:Red">${error} </p>
 			UserName <input type = "text" name = "username"><br></br>
 			Password <input type = "password" name = "password"><br></br>
 			<input type = "submit" value = "Login">
 		</form>
+		
 </body>
 </html>
