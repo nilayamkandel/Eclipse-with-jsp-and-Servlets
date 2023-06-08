@@ -9,7 +9,9 @@
 <body>
 	<h1>Welcome to index</h1>
 	<hr>
-		<a href = "LoginServlet" >Login</a>
+		<a href = "LoginServlet" >Login</a><br></br>
+		<a href = "SignUpServlet">Signup</a>
 	<hr>
 </body>
 </html>
+
