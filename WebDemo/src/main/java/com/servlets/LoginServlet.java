@@ -1,4 +1,4 @@
-package com.servlets;
+	package com.servlets;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -6,6 +6,9 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import com.service.UserService;
+import com.service.UserServiceImpl;
 
 /**
  * Servlet implementation class LoginServlet
@@ -35,13 +38,17 @@ public class LoginServlet extends HttpServlet {
 		String un = request.getParameter("username");
 		String pw = request.getParameter("password");
 		
-			if(un.equals("ram")&&pw.equals("123")) {
-				request.setAttribute("uname", "pw");
-				request.getRequestDispatcher("Home.jsp").forward(request,response);
-			}else {
-				request.setAttribute("error", "user not found !!");
-				request.getRequestDispatcher("LoginForm.jsp").forward(request,response);
-			}
+		UserService us = new UserServiceImpl();
+		if(us.login(un, pw)) {
+			request.setAttribute("uname", un);
+			request.getRequestDispatcher("Home.jsp").forward(request,response);
+		
+		}
+		else {
+			request.setAttribute("error", "user not found");
+			request.getRequestDispatcher("LoginForm.jsp").forward(request,response);
+		}
+		
 		
 	}
 
