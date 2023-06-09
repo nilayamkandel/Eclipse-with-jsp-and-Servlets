@@ -10,7 +10,9 @@
 	<h1>Welcome to navigation file</h1>
 	<hr>
 		<a href = "LoginServlet" >Login</a><br></br>
-		<a href = "SignUpServlet">Signup</a>
+		<a href = "SignUpServlet">Signup</a><br></br>
+		<a href = "UserListServlet">UserList</a><br></br>
+		
 	<hr>
 </body>
 </html>
