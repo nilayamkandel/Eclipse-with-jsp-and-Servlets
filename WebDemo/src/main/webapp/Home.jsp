@@ -52,23 +52,6 @@
             <!-- Heading -->
            
 
-            <!-- Nav Item - Pages Collapse Menu -->
-            
-
-            <!-- Nav Item - Utilities Collapse Menu -->
-            
-
-            <!-- Divider -->
-           
-
-            <!-- Heading -->
-           
-
-            <!-- Nav Item - Pages Collapse Menu -->
-            
-
-            <!-- Nav Item - Charts -->
-            
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
@@ -76,6 +59,9 @@
                     <i class="fas fa-fw fa-table"></i>
                     <span>Tables</span></a>
             </li>
+            <a href = "LoginForm.jsp">
+            <font color = "white">Logout</font>
+            </a>
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
