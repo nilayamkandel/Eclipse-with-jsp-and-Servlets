@@ -1,5 +1,9 @@
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?text=Hey Everyone!
+            </p>
+
 # Introductions
-## A simple project comprising JDBC, JSTL done in 
+## A simple project for beginner who want to learn briefly on view, model and servlets template. Basic login, logout, signup, userlist is done while storing the data in database.
 
 # Requirements
 ->JDBC
